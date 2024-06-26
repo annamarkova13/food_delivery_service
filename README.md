@@ -38,8 +38,9 @@ In this project, I calculated product metrics for a food delivery service, such 
 As a result of the calculated metrics, we can create several dashboards that reflect the current status of the service's operations.
 
 
-1. **Product and system metrics:**
+1. **Product and system metrics:**  
 1.1 [DAU (Daily Active Users), WAU (Weekly Active Users)](DAU_WAU.sql)
-
+Number of active users by week
+![newplot (7)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/b0c31c7c-ebec-4062-8170-d21ed2d1273f)
 
 
