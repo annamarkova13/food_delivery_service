@@ -2,7 +2,8 @@
 
 In this SQL project, I used synthetic data provided for the "SQL Simulator" course from [Karpov.courses](https://karpov.courses/).   
 
-I conducted an exploratory analysis using both basic and advanced SQL queries. 
+I conducted an exploratory analysis using both basic and advanced SQL queries. I used the Redash environment to execute queries and create visualizations.
+
 The data includes users' actions, their orders, and couriers' actions from 24/08/22 to 08/09/22.
 
 In this project, I calculated product metrics for a food delivery service, such as:
@@ -33,4 +34,12 @@ In this project, I calculated product metrics for a food delivery service, such 
    - Retention rate by days
    - Retention rate by cohorts
    - Cumulative ARPPU by cohorts and days
+
+As a result of the calculated metrics, we can create several dashboards that reflect the current status of the service's operations.
+
+
+1. **Product and system metrics:**
+1.1 [DAU (Daily Active Users), WAU (Weekly Active Users)](DAU_WAU.sql)
+
+
 
