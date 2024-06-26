@@ -1,6 +1,6 @@
 # SQL project: food delivery service
 
-In this SQL project, I used synthetic data provided for the "SQL Simulator" course from Karpov.courses. I conducted an exploratory analysis using both basic and advanced SQL queries. 
+In this SQL project, I used synthetic data provided for the "SQL Simulator" course from [Karpov.courses](https://karpov.courses/). I conducted an exploratory analysis using both basic and advanced SQL queries. 
 The data includes users' actions, their orders, and couriers' actions from 24/08/22 to 08/09/22.
 
 In this project, I calculated product metrics for a food delivery service, such as:
