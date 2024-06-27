@@ -20,7 +20,7 @@ In this project, I calculated product metrics for a food delivery service, such 
    - Time for order delivery
    - Burden on the system
 
-3. **Product Economics:**
+2. **Product Economics:**
    - Calculation of revenue indicators
    - ARPU (Average Revenue Per User), ARPPU (Average Revenue Per Paying User), and AOV (Average Order Value)
    - Cumulative ARPU, ARPPU, and AOV
@@ -29,7 +29,7 @@ In this project, I calculated product metrics for a food delivery service, such 
    - Analytics for products that generate the most income
    - Calculation of costs with taxes and gross profit
 
-4. **Marketing Metrics:**
+3. **Marketing Metrics:**
    - DAU (Daily Active Users), MAU (Monthly Active Users)
    - CAC (Customer Acquisition Cost)
    - ROI (Return on Investment)
@@ -108,7 +108,43 @@ Delivery of one order in average takes 20 minutes.
 ![newplot (13)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/d40cd666-e63f-44e5-99e4-6171065e6828)
 
 #### 1.7. [Burden on the system by hours](Product_and_system_metrics/burden_on_system.sql)
-To find out hours when users are the most active 
+To determine the hours when users are most active, let's analyze the number of delivered orders, canceled orders, and the share of canceled orders in the total number of orders for each hour. The highest load on the service is observed in the evening hours between 17:00 and 21:00, while the lowest load occurs at night between 02:00 and 06:00. The cancellation rate is around 5% during the day and remains quite stable.  
+
+*The load on the service by hours:*
+![newplot (15)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/c2ec94a3-8135-412e-9ff5-6cab430ad6ff)
+
+### 2. **Product Economics:**  
+  
+#### 2.1. [Calculation of revenue indicators](Product_economics/revenue_indicators.sql)
+We can observe a noticeable decline in daily revenue on September 5th and 6th, while on other days, the increase compared to the previous day remained positive. Based on previous calculations, we can attribute this to a drop in the growth of orders from new users and a decrease in the share of paying users in the service.
+
+Overall, in the 16 days of the service's existence, the total revenue amounted to 21,679,095.
+  
+*Daily revenue:*
+![newplot (20)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/b7b6b8c9-dcea-407a-ba48-da42100fd273)
+  
+*Increase in revenue generated on that day compared to the revenue of the previous day:*
+![newplot (21)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/c767e9e7-5999-4d3d-998b-14b939f62e96)
+
+*Cumulative revenue up to the current day:*
+![newplot (22)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/39770248-65b3-4e27-8a8b-0fe23c871873)
+
+#### 2.2 [ARPU (Average Revenue Per User), ARPPU (Average Revenue Per Paying User), and AOV (Average Order Value)](Product_economics/ARPU_ARPPU_ AOV.sql)
+The metrics ARPU and ARPPU show volatility in values throughout the observed period, with ARPPU ranging from $470 to $582. Meanwhile, the daily average order value (AOV) has stabilized and fluctuates between $370 and $383.
+
+Regarding the ratio of paying users to all users of the service, we can observe a stable gap in the average revenue per user, favoring the revenue from paying users. This is because order cancellations lead to a decrease in the average revenue per user.
+
+*Daily ARPU, ARPPU, AOV:*
+![newplot (24)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/a1280afb-0c9f-4e4a-900e-1dfb99d07d46)
+
+
+#### 2.3 [Cumulative ARPU, ARPPU, and AOV]()
+#### 2.4 [ARPU, ARPPU, and AOV by day of the week]()
+#### 2.5 [Daily revenue distribution between new and returning users]()
+#### 2.6 [Analytics for products that generate the most income]()
+#### 2.7 [Calculation of costs with taxes and gross profit]()
+
+
 
 
   
