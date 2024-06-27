@@ -23,7 +23,6 @@ In this project, I calculated product metrics for a food delivery service, such 
 2. **Product Economics:**
    - Calculation of revenue indicators
    - ARPU (Average Revenue Per User), ARPPU (Average Revenue Per Paying User), and AOV (Average Order Value)
-   - Cumulative ARPU, ARPPU, and AOV
    - ARPU, ARPPU, and AOV by day of the week
    - Daily revenue distribution between new and returning users
    - Analytics for products that generate the most income
@@ -129,7 +128,8 @@ Overall, in the 16 days of the service's existence, the total revenue amounted t
 *Cumulative revenue up to the current day:*
 ![newplot (22)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/39770248-65b3-4e27-8a8b-0fe23c871873)
 
-#### 2.2 [ARPU (Average Revenue Per User), ARPPU (Average Revenue Per Paying User), and AOV (Average Order Value)](Product_economics/ARPU_ARPPU_ AOV.sql)
+#### 2.2 [ARPU (Average Revenue Per User), ARPPU (Average Revenue Per Paying User), and AOV (Average Order Value)](Product_economics/ARPU_ARPPU_AOV.sql)
+
 The metrics ARPU and ARPPU show volatility in values throughout the observed period, with ARPPU ranging from $470 to $582. Meanwhile, the daily average order value (AOV) has stabilized and fluctuates between $370 and $383.
 
 Regarding the ratio of paying users to all users of the service, we can observe a stable gap in the average revenue per user, favoring the revenue from paying users. This is because order cancellations lead to a decrease in the average revenue per user.
@@ -137,12 +137,19 @@ Regarding the ratio of paying users to all users of the service, we can observe 
 *Daily ARPU, ARPPU, AOV:*
 ![newplot (24)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/a1280afb-0c9f-4e4a-900e-1dfb99d07d46)
 
+#### 2.3 [ARPU, ARPPU, and AOV by day of the week](Product_economics/DOW_APRU_APPRU_AOV.sql)
+Let's calculate the same metrics, but broken down by days of the week rather than by individual days.   
+In our calculations, we will only consider data from August 26, 2022, to September 8, 2022, inclusive—ensuring the analysis includes an equal number of all weekdays (exactly two days each).  
+The ARPU and ARPPU metrics reach their highest values on Saturday and Sunday (with a maximum ARPPU of $595). We might assume this is because people make purchases with higher average order values to stock up on groceries for the upcoming week, but the AOV remains almost unchanged on these days. Therefore, we can hypothesize that the increase in revenue per user is driven by repeat orders throughout the day. On other days of the week, the ARPPU ranges from $548 to $553.
 
-#### 2.3 [Cumulative ARPU, ARPPU, and AOV]()
-#### 2.4 [ARPU, ARPPU, and AOV by day of the week]()
-#### 2.5 [Daily revenue distribution between new and returning users]()
-#### 2.6 [Analytics for products that generate the most income]()
-#### 2.7 [Calculation of costs with taxes and gross profit]()
+*ARPU, ARPPU, and AOV by day of the week:*
+![newplot (25)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/e53c4521-77d2-48c1-86da-bdcab556cd61)
+
+#### 2.4 [Daily revenue distribution between new and returning users](Product_economics/new_and_returning_users_revenue.sql)
+
+
+#### 2.5 [Analytics for products that generate the most income]()
+#### 2.6 [Calculation of costs with taxes and gross profit]()
 
 
 
