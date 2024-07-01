@@ -146,13 +146,96 @@ The ARPU and ARPPU metrics reach their highest values on Saturday and Sunday (wi
 ![newplot (25)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/e53c4521-77d2-48c1-86da-bdcab556cd61)
 
 #### 2.4 [Daily revenue distribution between new and returning users](Product_economics/new_and_returning_users_revenue.sql)
+Two weeks after the service launch, the revenue from new users decreases, while the share of repeat orders increases. By the end of the second week, the share of revenue from new user orders stabilizes around 40%.  
+  
+*Daily revenue distribution between new and returning users:*
+![newplot (26)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/92feedd8-827b-40a1-a162-e939c8ae4cb3)
+
+#### 2.5 [Analytics for products that generate the most income](Product_economics/products_that_generate_the_most_income.sql)
+It would also be interesting to analyze which products are the most popular and contribute the most to our revenue. Let’s review the top 20 products that generate the highest revenue. We can see that the meat category makes the largest contribution: if we sum up the revenue shares of pork, chicken, beef, and lamb among the top 5 products, they account for 20% of the total revenue. Olive oil also represents a significant portion of the revenue. Based on this analysis, we can draw several conclusions:
+- The meat category is a major revenue driver. Pork, chicken, beef, and lamb collectively contribute significantly to overall sales, indicating strong consumer demand for these products.
+- Olive oil is another key revenue source. Its significant share of revenue suggests that it is a popular and essential item for customers.
+- Focus on high-revenue products. Since meat and olive oil are top contributors, prioritize their availability and quality to maintain or increase revenue.
+- Strategize marketing efforts. Highlight these popular products in marketing campaigns to attract more customers and boost sales.
+- Explore opportunities for growth. Investigate ways to expand the product range within these successful categories or introduce new products that complement meat and olive oil.
+  
+*Top-20 products that generate the most income:*
+![newplot (28)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/ceaa1ec5-47fc-4935-a773-ee12bc339bfa)
 
 
-#### 2.5 [Analytics for products that generate the most income]()
 #### 2.6 [Calculation of costs with taxes and gross profit]()
 
+Now let’s incorporate costs and taxes into our calculations to determine the gross profit, which represents the actual amount we earned from selling products over the analyzed period. We will calculate the following metrics:
 
+1. *Revenue Generated on That Day*  
+   The total amount earned from sales on a specific day.
+2. *Costs Incurred on That Day*  
+   The total expenses associated with producing or procuring the products sold on that day.
+3. *VAT Collected from Sales on That Day*  
+   The value-added tax collected on sales for that specific day.
+4. *Gross Profit for the Day*  
+   Calculated as: Revenue - Costs - VAT. This represents the profit made from sales after accounting for costs and taxes.
+5. *Total Revenue Up to That Day*  
+    The cumulative revenue generated from the start of the period up to and including that day.
+6. *Total Costs Up to That Day*  
+    The cumulative costs incurred from the start of the period up to and including that day.
+7. *Total VAT Up to That Day*  
+    The cumulative VAT collected from sales from the start of the period up to and including that day.
+8. *Total Gross Profit Up to That Day*  
+    Calculated as: Total Revenue - Total Costs - Total VAT. This shows the cumulative gross profit earned from sales over the period.
+9. *Share of Gross Profit in Revenue for That Day*  
+    The ratio of the gross profit for that day to the revenue for that day, expressed as a percentage. This shows the proportion of revenue that remains as profit after accounting for costs and VAT.
+10. *Share of Total Gross Profit in Total Revenue Up to That Day*  
+    The ratio of total gross profit to total revenue up to that day, expressed as a percentage. This indicates the overall profitability of the sales over the period.
 
+**To Calculate Costs, We Will Introduce Additional Conditions**  
+In simplified terms, the **costs** for our service will be considered as the sum of fixed and variable expenses. We will categorize **fixed costs** as warehouse rent and **variable costs** as the cost of order picking and delivery. Therefore, variable costs will be directly related to the number of orders.
+
+Based on the data provided by the finance department, we know the following:
+- In **August 2022**, the fixed costs amounted to **120,000 rubles per day**. However, starting from **September 2022**, the need for additional warehouse space increased the fixed costs to **150,000 rubles per day**.
+- Additionally, in **August 2022**, the cost of picking one order was **140 rubles**, the payment to couriers for one delivered order was **150 rubles**, and there was a daily bonus of **400 rubles** for couriers delivering **at least 5 orders per day**.
+- In **September 2022**, the cost of picking an order was reduced to **115 rubles**, but the bonus for delivering **5 or more orders per day** was increased to **500 rubles** to offer more competitive working conditions, while the payment for each delivered order remained at **150 rubles**.
+
+##### Cost Calculation:
+
+1. **Fixed Costs**:
+   - **August 2022**: 120,000 rubles per day.
+   - **September 2022**: 150,000 rubles per day.
+
+2. **Variable Costs**:
+   - **August 2022**:
+     - Cost of picking one order: 140 rubles.
+     - Payment to couriers for one delivered order: 150 rubles.
+     - Daily bonus for couriers: 400 rubles if they deliver at least 5 orders.
+   - **September 2022**:
+     - Cost of picking one order: 115 rubles.
+     - Payment to couriers for one delivered order: 150 rubles.
+     - Daily bonus for couriers: 500 rubles if they deliver at least 5 orders.
+
+##### Formulas for Cost Calculation:
+
+- **Total Variable Cost** = (Cost of Picking Orders + Payment to Couriers) * Number of Orders + (Bonus for Couriers if Applicable)
+  - **August 2022**:
+    - **Total Variable Cost** = (140 + 150) * Number of Orders + (400 rubles if 5 or more orders are delivered)
+  - **September 2022**:
+    - **Total Variable Cost** = (115 + 150) * Number of Orders + (500 rubles if 5 or more orders are delivered)
+
+##### Key Terms:
+
+- **Fixed Costs:** Regular expenses that do not change with the volume of orders.
+- **Variable Costs:** Expenses that vary directly with the number of orders.
+- **Order Picking Cost:** The expense associated with preparing an order for delivery.
+- **Courier Payment:** The fee paid to couriers for delivering an order.
+- **Courier Bonus:** An additional payment to couriers based on the number of orders delivered.
+
+By incorporating these calculations, we can better understand the cost structure of the service and evaluate financial performance over time.
+
+##### Summary Table:
+
+| **Month**    | **Fixed Costs** | **Order Picking Cost** | **Courier Payment** | **Courier Bonus** |
+|--------------|-----------------|------------------------|---------------------|-------------------|
+| **August 2022** | 120,000 rubles/day | 140 rubles/order       | 150 rubles/order    | 400 rubles/day     |
+| **September 2022** | 150,000 rubles/day | 115 rubles/order       | 150 rubles/order    | 500 rubles/day     |
 
   
 
