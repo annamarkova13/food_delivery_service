@@ -20,7 +20,7 @@ To achieve these objectives, I employed both basic and advanced SQL queries to e
 
 The analysis was structured into three main categories:
 
-1. **Product and System Metrics**
+1. [**Product and System Metrics**](https://github.com/annamarkova13/SQL_project_food_delivery_service/edit/main/README.md#1-product-and-system-metrics)
    - DAU (Daily Active Users), WAU (Weekly Active Users)
    - Dynamics of the number of users and couriers
    - Dynamics of the share of paying users and active couriers
@@ -29,7 +29,7 @@ The analysis was structured into three main categories:
    - Time for order delivery
    - Burden on the system
 
-2. **Product Economics**
+2. [**Product Economics**](https://github.com/annamarkova13/SQL_project_food_delivery_service/edit/main/README.md#2-product-economics)
    - Calculation of revenue indicators
    - ARPU (Average Revenue Per User), ARPPU (Average Revenue Per Paying User), and AOV (Average Order Value)
    - ARPU, ARPPU, and AOV by day of the week
@@ -37,7 +37,7 @@ The analysis was structured into three main categories:
    - Analytics for products that generate the most income
    - Calculation of costs with taxes and gross profit
 
-3. **Marketing Metrics**
+3. [**Marketing Metrics**](https://github.com/annamarkova13/SQL_project_food_delivery_service/edit/main/README.md#3-marketing-metrics)
    - CAC (Customer Acquisition Cost)
    - ROI (Return on Investment)
    - Average bill for campaigns
@@ -168,7 +168,7 @@ As a result of the calculated metrics, we can create several dashboards that ref
 - **Optimize courier workload:** reassess the number of couriers needed and consider adjusting the number of couriers to better match demand. Implement scheduling adjustments to better align with peak order times.
 - **Increase order volume:** work on increasing the order volume per courier by implementing strategies to boost overall orders, such as promotions or partnerships.
 
-   *Number of orders per user:*
+   *Number of orders per courier:*
    ![newplot (11)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/4fd7c1c7-adab-4426-ba63-13d91733d4e4)
 
 ### 1.6. [Time for order delivery](Product_and_system_metrics/time_to_delivery.sql)  
@@ -195,7 +195,8 @@ To determine the hours when users are most active, let's analyze the number of d
 - **Address Cancellations:** Although the cancellation rate is stable, it’s beneficial to investigate the causes of order cancellations and work on reducing them.
 
 *The load on the service by hours:*
-![newplot (15)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/c2ec94a3-8135-412e-9ff5-6cab430ad6ff)
+![newplot (37)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/3174958f-ae26-4711-a813-33a34612c754)
+
 
 ### Conclusions and recommendations
 
