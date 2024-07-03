@@ -14,7 +14,7 @@ We have several **tables** which describe actions of users and couriers:
 
 ### **Methodology**
 
-To achieve these objectives, I employed both basic and advanced SQL queries to extract and analyze data. The analysis was performed in the Redash environment, which enabled the execution of complex queries and the creation of comprehensive visualizations. The data sets used in this analysis included users’ actions, order details, and couriers’ activities.
+To achieve these objectives, I employed both basic and advanced PostgreSql queries to extract and analyze data. The analysis was performed in the Redash environment, which enabled the execution of complex queries and the creation of comprehensive visualizations. The data sets used in this analysis included users’ actions, order details, and couriers’ activities.
 
 ### **Analysis Focus**
 
