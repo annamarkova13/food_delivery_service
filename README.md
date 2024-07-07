@@ -89,6 +89,10 @@ The following dashboards were created using Tableau and are supported by links t
 
 - [Couriers and Delivery Metrics](https://public.tableau.com/views/Couriersanddeliverymetrics/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ![Dashboard 1 (1)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/f66d8e70-2f39-43c0-9fa9-7817f10e9d91)
+  
+- [Product Economics Metrics](https://public.tableau.com/views/Producteconomicsmetrics/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Dashboard 1 (3)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/cf1a411d-11bc-4590-8e45-76caf0008ae4)
+
 
 
 ## 1. Product and system metrics:
