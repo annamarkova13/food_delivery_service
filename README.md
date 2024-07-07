@@ -81,6 +81,8 @@ This project provided a comprehensive evaluation of the online grocery delivery 
 
 ## Dashboards
 As a result of the calculated metrics, we can create several dashboards that reflect the current status of the service's operations.  
+The following dashboards were created using Tableau and are supported by links to Tableau Public pages.
+
 - [Users And Orders Metrics](https://public.tableau.com/shared/43JCRYPWB?:display_count=n&:origin=viz_share_link)  
 ![USERS AND ORDERS METRICS (1)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/bef1e598-1f7d-4153-8d7a-a91f80192351)
 
