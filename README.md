@@ -81,8 +81,12 @@ This project provided a comprehensive evaluation of the online grocery delivery 
 
 ## Dashboards
 As a result of the calculated metrics, we can create several dashboards that reflect the current status of the service's operations.  
-[Users And Orders Metrics](https://public.tableau.com/shared/43JCRYPWB?:display_count=n&:origin=viz_share_link)  
-![Dashboard 1](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/c03526c9-5c32-473e-bc0d-0107d9e8258c)  
+- [Users And Orders Metrics](https://public.tableau.com/shared/43JCRYPWB?:display_count=n&:origin=viz_share_link)  
+![USERS AND ORDERS METRICS (1)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/bef1e598-1f7d-4153-8d7a-a91f80192351)
+
+
+- [Couriers and Delivery Metrics](https://public.tableau.com/views/Couriersanddeliverymetrics/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+![Dashboard 1 (1)](https://github.com/annamarkova13/SQL_project_food_delivery_service/assets/169673359/f66d8e70-2f39-43c0-9fa9-7817f10e9d91)
 
 
 ## 1. Product and system metrics:
