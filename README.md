@@ -16,7 +16,7 @@ We have several **tables** which describe actions of users and couriers:
 
 To achieve these objectives, I employed both basic and advanced PostgreSql queries to extract and analyze data. The analysis was performed in the Redash environment, which enabled the execution of complex queries and the creation of comprehensive visualizations. The data sets used in this analysis included users’ actions, order details, and couriers’ activities.
 
-### **Analysis Focus**
+### **Analysis focus**
 
 The analysis was structured into three main categories:
 
@@ -45,11 +45,11 @@ The analysis was structured into three main categories:
    - Retention rate by cohorts
    - Cumulative ARPPU by cohorts and days
 
-### **Impact of Analysis**
+### **Impact of analysis**
 
 The analysis provided a deep dive into the operational and financial aspects of the online grocery delivery service. Here’s how the findings and recommendations from the analysis impact the service:
 
-| **Analysis Area**                | **Impact**                                                                                         |
+| **Analysis area**                | **Impact**                                                                                         |
 |----------------------------------|----------------------------------------------------------------------------------------------------|
 | **User Engagement and Growth**   | Identified growth trends and peak periods, allowing for targeted marketing and engagement strategies. |
 | **System Performance**          | Highlighted peak usage hours and system burden, leading to recommendations for improved infrastructure and load management. |
@@ -58,15 +58,15 @@ The analysis provided a deep dive into the operational and financial aspects of 
 | **Marketing Effectiveness**    | Revealed the effectiveness of acquisition and retention efforts, helping to balance marketing strategies and improve customer retention programs. |
 | **Top Revenue Products**       | Identified high-revenue products, guiding inventory management and marketing strategies to focus on best-performing items. |
 
-### **Conclusion and Recommendations**
+### **Conclusion and recommendations**
 
-**Key Findings:**
+**Key findings:**
 - **Growth Trends:** DAU and WAU showed positive growth, with notable increases during the weekends.
 - **User-Courier Balance:** The number of users is growing faster than couriers, suggesting a need for improved courier management.
 - **Order Metrics:** A consistent AOV but fluctuating new user orders indicated a need for strategies to increase repeat purchases.
 - **Financial Health:** The service transitioned from initial losses to profitability, highlighting successful cost management and revenue strategies.
 
-**Strategic Recommendations:**
+**Strategic recommendations:**
 1. **Marketing Campaigns:** Enhance weekday marketing efforts to balance the higher weekend spending.
 2. **Retention Strategies:** Focus on converting non-paying users and increasing repeat orders.
 3. **Operational Efficiency:** Optimize courier allocation based on user demand and peak times.
@@ -74,7 +74,7 @@ The analysis provided a deep dive into the operational and financial aspects of 
 
 The insights from this analysis not only reflect the current state of the service but also provide a strategic foundation for future improvements. By implementing the recommendations, the service can enhance user satisfaction, optimize operational efficiency, and drive sustained financial growth.
 
-### **Project Summary**
+### **Project summary**
 
 This project provided a comprehensive evaluation of the online grocery delivery service’s metrics through advanced data analysis techniques. The findings offer actionable insights for optimizing marketing strategies, improving operational efficiency, and managing finances effectively.
 
